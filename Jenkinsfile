@@ -16,7 +16,7 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 // No 'dir' block needed because files are in the root
-                sh 'terraform init -no-color'
+                sh 'terraform init -upgrade -no-color'
             }
         }
 
