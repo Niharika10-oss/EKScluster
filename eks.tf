@@ -2,7 +2,7 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.3" # Stable version compatible with Provider v5.x
 
-  cluster_name    = "niharika-eks-cluster"
+  cluster_name    = "niharika-eks-v2"
   cluster_version = "1.30"
 
   vpc_id                         = module.vpc.vpc_id
